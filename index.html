@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+
+    <aside class="sidebar">
+      <form class="sidebar__form">
+        <input type="checkbox" class="sidebar__checkbox" id="btn-toggle"/">
+        <label for="btn-toggle" class="sidebar__label sidebar__label--open">
+          <span class="material-symbols-outlined sidebar__icon sidebar__icon--form">menu</span>
+        </label>
+        <label for="btn-toggle" class="sidebar__label sidebar__label--close">
+          <span class="material-symbols-outlined sidebar__icon sidebar__icon--form">close</span>
+        </label>
+      </form>
+      <picture class="sidebar__picture">
+        <source srcset="../img/logo-nu.png" media="(max-width: 37.5em)" />
+        <img src="../img/logo-nu.png" class="sidebar__picture-img" alt="logo-nu" />
+      </picture>
+      <nav class="sidebar__nav">
+        <ul class="sidebar__nav-list">
+          <li class="sidebar__nav-item">
+            <span class="material-symbols-outlined sidebar__icon">
+              notifications
+              </span>
+            <a class="sidebar__nav-link" href="#">Notifications</a>
+          </li>
+          <li class="sidebar__nav-item">
+            <span class="material-symbols-outlined sidebar__icon">
+              email
+              </span>
+            <a class="sidebar__nav-link" href="#">Messages</a>
+          </li>
+          <li class="sidebar__nav-item">
+            <span class="material-symbols-outlined sidebar__icon">
+              shopping_cart
+              </span>
+            <a class="sidebar__nav-link" href="#">Cart</a>
+          </li>
+          <li class="sidebar__nav-item">
+            <span class="material-symbols-outlined sidebar__icon">
+              account_balance
+              </span>
+            <a class="sidebar__nav-link" href="#">Account Balance</a>
+          </li>
+          <li class="sidebar__nav-item">
+            <span class="material-symbols-outlined sidebar__icon">
+              settings
+              </span>
+            <a class="sidebar__nav-link" href="#">Settings</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="sidebar__profile">
+        <div class="sidebar__profile-user">
+          <img
+            src="../img/user-3.jpeg"
+            alt="avatar"
+            class="sidebar__profile-avatar"
+          />
+          <p class="sidebar__profile-name">Moises Lugo</p>
+        </div>
+        <ul class="sidebar__nav-list sidebar__nav-list--profile">
+          <li class="sidebar__nav-item sidebar__nav-item--profile">
+            <span class="material-symbols-outlined sidebar__icon">
+              logout
+            </span>
+            <a class="sidebar__nav-link sidebar__nav-link--profile" href="#">
+              Logout
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+  </body>
+</html>
